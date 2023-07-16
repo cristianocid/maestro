@@ -1,0 +1,22 @@
+appId: com.qazandoqafood
+---
+- runFlow: login.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn:
+    id: "android:id/button1"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    point: "95%,44%"
+- tapOn:
+    id: "open-cart-button"
+- tapOn: "CONFIRMAR PEDIDO"
+- tapOn: "FAZER PEDIDO"
+- tapOn:
+    id: "android:id/button1"
+- scrollUntilVisible:
+    element: "Dinheiro" # ou algum outro seletor
+    direction: DOWN
+- tapOn:
+    point: "11%,57%"
+- tapOn: "FAZER PEDIDO"
+- assertVisible: "Pedido realizado"
