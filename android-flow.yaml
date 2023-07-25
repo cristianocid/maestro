@@ -12,10 +12,10 @@ appId: com.qazandoqafood
     id: "password"
 - inputText: 123456
 - tapOn: "ENTRAR"
-- tapOn: "Selecione seu endereço..."
+- tapOn: "Selecione se endereço..."
 - tapOn:
     id: "android:id/button1"
-- tapOn: "Pastelaria da Maria"
+- tapOn: "Pastelaria a Maria"
 - tapOn:
     point: "95%,44%"
 - tapOn:
